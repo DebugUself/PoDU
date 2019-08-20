@@ -87,10 +87,13 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="main active"><a href="#_1">怼力通证</a></li>
-            <li><a href="#_2">缘起</a></li>
-            <li><a href="#_3">分析</a></li>
-            <li><a href="#_4">嗯哼</a></li>
-            <li><a href="#_5">(￣▽￣)</a></li>
+            <li><a href="#_2">背景</a></li>
+            <li><a href="#_3">现象</a></li>
+            <li><a href="#_4">分析</a></li>
+            <li><a href="#_5">目标</a></li>
+            <li><a href="#_6">现状</a></li>
+            <li><a href="#_7">访问</a></li>
+            <li><a href="#_8">更多</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -152,54 +155,69 @@
 <p>.::</p>
 <h2 id="_2">背景<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
 <p>一个自学社区面临的典型问题<p>
-<li>如何证明自己在自学?</li>
-<li>具体都自学了什么?</li>
+<ul>
+<li><b>如何证明自己在自学?</b></li>
+<li><b>具体都自学了什么?</b></li>
+</ul>
 <h2 id="_3">现象<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
-<p>自怼圈任务丰富</p>
-<p>而记录个人自怼证据大多分散在各处分支</p>
-<p>收敛自学证据仅集中在<code>手工化</code>的 2 个维度</p>
+<p>自怼圈任务丰富, 而记录个人自怼证据分散在各处分支</p>
+<p>收敛自学证据仅集中在<code>手工化</code>的 2 个维度上</p>
+<ul>
 <li>Season Plan</li>
-<li>时间账单?</li>
-<p>为更好得评估<code>日有寸进</code></p>
-<p>需<code>自动化</code> <code>多维</code>评估工具...</p>
+<li>时间账单</li>
+</ul>
+<p>为更好得评估<code>日有寸进</code>, 需<code>自动化</code>工具...</p>
 <h2 id="_4">分析<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
 <p>量化分析建立在可观察的外在行为指标上</p>
-<p>幸好主要蟒营有效外部活动都在 github 中</p>
-<p>而且: <a href="https://developer.github.com/v3/previews/">API previews | GitHub Developer Guide</a></p>也有丰富接口
+<p>自怼圈有效外部活动都在 github 中</p>
+<ul>
+<li>而且: <a href="https://developer.github.com/v3/previews/">API | GitHub </a>也有丰富接口</li>
+</ul>
 <h2 id="_5">目标<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
-<p>自动化定期统计关键客观活性数据:</p>>
-<li>每个成员, 历史/近期 核心行为</li>>
-<li>top5 单独的通证页面, URI 模式:</li>>   
-    <li>du.101.camp/podu/</li>>
-<p>包含:</p>>
-<li>commit 次数, 涉及行数</li>>
-<li>commit-comments 次数, 字数</li>>
-<li>issue 次数, 字数, 平均字数/次</li>>
-<li>issue-comments 次数, 字数, 平均字数/次</li>>
-<li>wiki 编辑次数, 涉及字数</li>>
-<p>以及, 通过归一化, 加权后, 活性指数, 在怼圈历史上的总排名</p>>
+<p>自动化定期统计关键客观活性数据:</p>
+<ul>
+<li>每个成员, 历史/近期 核心行为</li>
+<li>top5 单独的通证页面</li>   
+<li>URI 模式: <code>du.101.camp/podu</code></li>
+</ul>
+<p>包含:</p>
+<ul>
+<li>commit 次数, 涉及行数</li>
+<li>commit-comments 次数, 字数</li>
+<li>issue 次数, 字数, 平均字数/次</li>
+<li>issue-comments 次数, 字数, 平均字数/次</li>
+</ul>
+<p>以及, 通过归一化/加权后, 所得活性指数在怼圈历史/近期的总排名</p>
 <h2 id="_6">现状<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
-<p>代码:</p>>
-<li><a href="https://github.com/DebugUself/du4proto/tree/DU_tools/PoDU">du4proto/PoDU</a>></li>
-<p>依赖:</p>>
-<li>Python >= 3.7.0</li>>
-<li>requests</li>>
-<li>numpy</li>>
-<li>matplotlib</li>>
-<li>termgraph</li>>
-<li>textwrap3</li>>
-<p>统计:</p>>
-<li>ci ~ commit , 自怼仓库 push 次数</li>>
-<li>cc ~ commit-comments , 提交 diff 页面中的回复/讨论次数</li>>
-<li>is ~ issue , 自怼提案创建次数</li>>
-<li>ic ~ issue-comments , 自怼仓提案回复次数</li>>
-<p>以此综合指数为基础所有成员为数据域进行归一化处置</p>>
+<p>代码:</p>
+<ul>
+<li><a href="https://github.com/DebugUself/du4proto/tree/DU_tools/PoDU">du4proto/PoDU</a></li>
+</ul>
+<p>依赖:</p>
+<ul>
+<li>Python >= 3.7.0</li>
+<li>requests</li>
+<li>numpy</li>
+<li>matplotlib</li>
+<li>termgraph</li>
+<li>textwrap3</li>
+</ul>
+<p>统计:</p>
+<ul>
+<li>ci ~ commit , 自怼仓库 push 次数</li>
+<li>cc ~ commit-comments , 提交 diff 页面中的回复/讨论次数</li>
+<li>is ~ issue , 自怼提案创建次数</li>
+<li>ic ~ issue-comments , 自怼仓提案回复次数</li>
+</ul>
+<p>以此综合指数为基础所有成员为数据域进行归一化处置</p>
 <h2 id="_7">访问<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
-<li>入口:<a href="https://github.com/DebugUself/PoDU">https://github.com/DebugUself/PoDU</a></li>
-<li>怼员:<a href="https://du.101.camp/PoDU/v0/{github 帐号}/">https://du.101.camp/PoDU/v0/{github 帐号}/</a>></li>
-<li>eg:<a href="https://du.101.camp/PoDU/v0/zoomquiet/">https://du.101.camp/PoDU/v0/zoomquiet/</a>></li>
+<ul>
+<li>入口: <a href="https://github.com/DebugUself/PoDU"> https://github.com/DebugUself/PoDU</a></li>
+<li>怼员: <code> https://du.101.camp/PoDU/v0/{github 帐号}/</code></li>
+<li>eg: <a href="https://du.101.camp/PoDU/v0/zoomquiet/"> https://du.101.camp/PoDU/v0/zoomquiet/</a></li>
+</ul>
 <h2 id="_8">更多<a class="headerlink" href="#_5" title="Permanent link">¶</a></h2>
-<p>>详情参见 -> <a href="https://du.101.camp/2019-06/PoDU2-FourGods-bear/">PoDU 综述2:四神汤</a></p>
+<p>详情参见 -> <a href="https://du.101.camp/2019-06/PoDU2-FourGods-bear/">PoDU 综述2:四神汤</a></p>
 <ul>
 <li>190820 improve site</li>
 <li>190609 init. site</li>
